@@ -1,13 +1,14 @@
 package com.xiaowu.designpattern;
 
+
 /**
- * Hello world!
+ * 入口没啥屁用
  *
  */
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+    	System.out.println("这很样式");
     }
 }

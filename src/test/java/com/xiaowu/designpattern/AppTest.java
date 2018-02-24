@@ -1,5 +1,8 @@
 package com.xiaowu.designpattern;
 
+import com.xiaowu.factory.factory;
+import com.xiaowu.factory.product_A;
+
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -10,6 +13,23 @@ import junit.framework.TestSuite;
 public class AppTest 
     extends TestCase
 {
+	
+	public void  factoryTest() {
+		
+		factory fac = new factory();
+		try {
+			product_A pro = (product_A) fac.getproduct(product_A.class);
+			System.out.println(pro.getClass().getName());
+		} catch (InstantiationException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
     /**
      * Create the test case
      *
@@ -19,7 +39,7 @@ public class AppTest
     {
         super( testName );
     }
-
+    
     /**
      * @return the suite of tests being tested
      */
@@ -33,6 +53,7 @@ public class AppTest
      */
     public void testApp()
     {
-        assertTrue( true );
+//        assertTrue( true );
+        factoryTest();
     }
 }
