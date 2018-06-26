@@ -1,20 +1,12 @@
 package com.xiaowu.designpattern;
 
-import com.xiaowu.decorator.Decorator_1;
-import com.xiaowu.decorator.Decoratored;
-
 /**
- * 测试入口
- *
+ * 一个入口,你能找到调用的地方吗？嘻嘻
  */
 public class App 
 {
     public static void main( String[] args )
     {
-    	Decoratored  decoratored = new Decoratored();
-    	decoratored.dosomething();
-    	Decorator_1 decorator_1 = new Decorator_1(decoratored);
-    	decorator_1.dosomething();
-    	
+     System.out.println("风轻云淡");    	
     }
 }
